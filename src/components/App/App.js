@@ -5,7 +5,7 @@ import {Layout} from "antd";
 import LoginPage from "../LoginPage/LoginPage";
 import Dashboard from "../Dashboard/Dashboard";
 import NotFound from "../Common/NotFoundPage";
-import Sony1Header from "../Dashboard/Sony1Header";
+import Header from "../Dashboard/Header";
 import AuthRoute from "../Common/AuthRoute";
 
 export default inject('appRouter', 'loginStore')(class App extends React.Component {
@@ -22,7 +22,7 @@ export default inject('appRouter', 'loginStore')(class App extends React.Compone
         return (
             <Layout>
                 <Layout.Header style={{width: '100%'}}>
-                    <Sony1Header/>
+                    <Header/>
                 </Layout.Header>
                 <Switch>
                     <Route exact path='/admin/login' component={LoginPage}/>

@@ -6,7 +6,6 @@ export default class IndexingStore {
     constructor(api) {
         this.api = api;
 
-        // object names are equivalent of IndexerSrv keys
         extendObservable(this, {
             indexers: {
                 PRODUCT: {

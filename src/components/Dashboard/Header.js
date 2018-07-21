@@ -6,7 +6,7 @@ import HeaderAppInfo from "./HeaderAppInfo";
 import {defaultPage} from "../../common/commons";
 import {Link} from "react-router-dom";
 
-export default observer(class Sony1Header extends React.Component {
+export default observer(class Header extends React.Component {
     render() {
         return (
             <Row>
